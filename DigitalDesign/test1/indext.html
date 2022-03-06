@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HTML И CSS</title>
+	<link rel="stylesheet" href="css/css.css">
+	<script src="script/js.js"></script>
+</head>
+
+<body>
+
+	<div class="container">
+
+		<svg display="none">
+			<symbol viewBox="0 0 400 400" id="up">
+				<g transform="matrix(0.45 0 0 0.45 200 200)" id="Layer_1">
+					<path
+						style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"
+						transform=" translate(-255.39, -256.05)"
+						d="M 341.8 50.9 c 113.3 47.7 166.5 178.3 118.7 291.6 S 282.2 508.9 168.9 461.2 S 2.5 282.9 50.3 169.6 C 85 87.1 165.9 33.4 255.4 33.4 C 285.1 33.4 314.5 39.3 341.8 50.9 z M 63.4 255.4 c 0 106 86 192 192 192 s 192 -86 192 -192 s -86 -192 -192 -192 S 63.4 149.4 63.4 255.4 z M 370.7 227.4 L 255.4 112.1 L 140.1 227.4 l 21.2 21.2 l 79.1 -79.2 v 208.2 h 30 V 169.4 l 79.1 79.1 L 370.7 227.4 z"
+						stroke-linecap="round" />
+				</g>
+			</symbol>
+		</svg>
+		<svg class="icon__up">
+			<use xlink:href="#up"></use>
+		</svg>
+		<h1>Веб-технология HTML И CSS</h1>
+		<div class="contents">
+
+			<h2>Оглавление</h2>
+			<ol class="contents__ol">
+				<h3 class="">
+					<li class="contents__li li1">
+						<a href="#html">Что такое HTML</a>
+					</li>
+				</h3>
+				<h3>
+					<li class="contents__li li2">
+						<a href="#html2">Структура HTML-документа</a>
+					</li>
+				</h3>
+				<h3>
+					<li class="contents__li li1">
+						<a href="#css">Что такое CSS</a>
+					</li>
+				</h3>
+				<h3>
+					<li class="contents__li li2">
+						<a href="#css2">Способы задания стилей</a>
+					</li>
+				</h3>
+			</ol>
+		</div>
+		<div class="article">
+			<a name="html"></a>
+			<u>
+				<h3>Что такое HTML</h3>
+			</u>
+			<div class="article__1">
+				<div class="article__text">
+					<p><b>HTML</b> (от англ. HyperText Markup Language — «язык гипертекстовой разметки»)
+						<em>
+							— стандартизированный язык разметки документов для просмотра веб-страниц
+							в браузере.
+						</em> Веб-браузеры получают HTML документ от сервера по протоколам
+						HTTP/HTTPS или открывают с локального диска, далее интерпретируют код в
+						интерфейс, который будет отображаться на экране монитора.
+					</p>
+				</div>
+				<div class="article__img">
+					<img title="html" src="img/html.jpeg" alt="html">
+				</div>
+
+
+			</div>
+			<a name="html2"></a>
+			<u>
+				<h3>Структура HTML-документа</h3>
+			</u>
+
+
+			<div class="article__2">
+				<div class="article2__img">
+					<img title="структура html" src="img/stru.gif" alt="структура html">
+					<h5>структура html</h5>
+				</div>
+				<div class="article__text">
+					<p>
+						Все HTML-документы состоят из заголовочной части <b>(head)</b> и тела документа
+						<b>(body)</b>. В заголовочной части помещается метаинформация, являющаяся
+						описанием документа. В теле документа расположено непосредственно содержимое,
+						которое выводится в окне браузера или на печатающее устройство. Вся
+						веб-страница должна быть заключена в теги &lt;html&gt; … &lt;/html&gt;.
+						Заголовок обрамляется тегом &lt;head&gt; … &lt;head&gt;, а тело документа
+						тегом &lt;body&gt; … &lt;/body&gt;.
+					</p>
+
+					<p>Следует заметить, что большая часть HTML-тегов является парными, т.
+						е. требуют использования открывающего и закрывающего тегов. Открывающий
+						тег состоит из имени заключенного в угловые скобки &lt;&gt;. В закрывающем
+						теге перед именем добавляется знак слеш /.</p>
+
+				</div>
+			</div>
+			<div class="article__css">
+				<a name="css"></a>
+				<u>
+					<h3>Что такое CSS</h3>
+				</u>
+				<p>
+					<b>CSS</b> (англ. Cascading Style Sheets <em><b>«каскадные таблицы стилей»</b> </em> ) — формальный язык
+					описания внешнего вида документа (веб-страницы), написанного с использованием
+					разметки (чаще всего HTML или XHTML). Также может применяться к любым XML-документам,
+					например, к SVG или XUL.
+				</p>
+				<p>
+					CSS используется создателями веб-страниц для задания цветов,
+					шрифтов, стилей, расположения отдельных блоков и других аспектов
+					представления внешнего вида этих веб-страниц. Основной целью
+					разработки CSS являлось отделение описания логической структуры
+					веб-страницы (которое производится с помощью HTML или других языков разметки)
+					от описания внешнего вида этой веб-страницы (которое теперь производится с
+					помощью формального языка CSS). Такое разделение может увеличить доступность
+					документа, предоставить большую гибкость и возможность управления его
+					представлением, а также уменьшить сложность и повторяемость в структурном содержимом.
+				</p>
+				<p>
+					Кроме того, CSS позволяет представлять
+					один и тот же документ в различных стилях
+					или методах вывода, таких как экранное представление,
+					печатное представление, чтение голосом (специальным голосовым
+					браузером или программой чтения с экрана) или при выводе устройствами,
+					использующими шрифт Брайля
+				</p>
+				<a name="css2"></a>
+				<u>
+					<h3>Способы задания стилей</h3>
+				</u>
+				<i>
+					Существует три способа задания стиля: </i>
+				<ul>
+					<li>
+						В заголовочном файле при помощи тега &lt;style&gt; :
+						<div class="example">
+							&lt;style type="text/css"&gt;<br>
+							&lt;!--<br>
+							.style1 {<br>
+							font-family: "Times New Roman", Times, serif;<br>
+							}<br>
+							--&gt;<br>
+							&lt;/style&gt;
+						</div>
+					</li>
+					<li>
+						В отдельном файле, его необходимо подключить при
+						помощи тега &lt;link&gt;:
+						<div class="example">
+							&lt;link href="/style.css" rel="stylesheet"
+							type="text/css"&gt;
+						</div>
+					</li>
+
+					<li>
+						Cтиль внутри тега:
+						<div class="example">
+							&lt;p style="color:red"&gt;текст рыба&lt;/p&gt;
+						</div>
+					</li>
+				</ul>
+
+
+
+
+			</div>
+		</div>
+
+	</div>
+
+
+</body>
+
+</html>

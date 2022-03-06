@@ -1,0 +1,169 @@
+.icon__up {
+	position: fixed;
+	bottom: 0px;
+	right: -5px;
+	z-index: 9999;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+a:hover {
+	color: blue;
+}
+p {
+	padding-right: 50px;
+}
+h1 {
+	font-size: max(2.3em, min(2em, 3.333vw));
+}
+h2,
+h3 {
+	font-size: max(2em, min(1.5em, 3.333vw));
+}
+h1,
+h2,
+h3 {
+	text-transform: uppercase;
+}
+h1,
+h5 {
+	text-align: center;
+}
+h5 {
+	margin-top: 0px;
+}
+.container {
+	max-width: 1380px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.contents {
+	border-top: solid;
+	border-bottom: solid;
+}
+
+.contents h2 {
+	padding-left: 5%;
+	padding-top: 10px;
+}
+.contents__ol {
+	margin-left: 50px;
+}
+.contents__li {
+	margin-top: 20px;
+}
+.contents__li a {
+	display: block;
+}
+.li1 {
+	background: rgb(238, 13, 13);
+}
+.li2 {
+	background: rgb(212, 133, 133);
+}
+.article {
+	width: 100%;
+}
+.article h3 {
+	text-align: center;
+	padding-top: 0px;
+}
+.article__1,
+.article__2 {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	column-gap: 20px;
+}
+
+.article__text p,
+.article__css p,
+ul,
+i {
+	text-align: justify;
+	text-indent: 20px;
+	font-size: max(1.3em, min(0.8em, 3.333vw));
+}
+.article__text {
+}
+.article__img img {
+	display: block;
+	width: 50%;
+	margin: 0 auto 10px;
+}
+.article2__img {
+	max-height: 470px;
+}
+.article2__img img {
+	display: block;
+	height: 100%;
+	margin: 0 auto;
+}
+.example {
+	background: rgb(177, 162, 162);
+	border: solid;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	min-width: 200px;
+}
+
+@media (max-width: 768px) {
+	.contents h2 {
+		text-align: center;
+	}
+	.contents__ol {
+		margin-left: 5px;
+	}
+}
+@media (max-width: 695px) {
+	.article__text {
+		order: 2;
+	}
+	.article__img {
+		order: 1;
+	}
+	.article2__img img {
+		width: 100%;
+	}
+	.article__text {
+		margin-top: 10px;
+	}
+	p {
+		padding-right: 5px;
+	}
+}
+
+@media (max-width: 995px) {
+	.article__img img {
+		width: 100%;
+	}
+}
+@media (max-width: 850px) {
+	.article__text p,
+	.article__css p,
+	ul,
+	i {
+		font-size: max(1em, min(0.8em, 3.333vw));
+	}
+	h3 {
+		font-size: max(1.2em, min(1em, 3.333vw));
+	}
+}
+
+@media (max-width: 358px) {
+	.article__1,
+	.article__2 {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.article__text {
+		order: 2;
+	}
+	.article__img {
+		order: 1;
+	}
+}
+/* если меньше 735, но больше 615 */

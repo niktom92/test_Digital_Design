@@ -1,0 +1,65 @@
+body {
+	background: rgb(206, 198, 198);
+	margin: 0;
+}
+.date {
+	text-align: center;
+	min-width: 320px;
+	max-width: 520px;
+
+	background: rgb(231, 214, 214);
+	margin: 10% auto;
+	border: solid;
+}
+.date__input,
+.button {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	min-width: 30%;
+	min-height: 30px;
+	font-size: 15pt;
+}
+.date__input {
+	background: rgb(187, 170, 170);
+	color: aliceblue;
+	text-align: center;
+}
+.button {
+	margin-top: 3%;
+	background: #338f38;
+	color: #ffffff;
+	border-radius: 30px;
+	position: relative;
+	overflow-x: hidden;
+}
+.button .flare {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 45px;
+	transform: skewX(-45deg);
+	animation: flareAnimation;
+	left: -150%;
+	background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4));
+	animation: flareAnimation 1s infinite linear;
+}
+
+@keyframes flareAnimation {
+	0% {
+		left: -150%;
+	}
+	100% {
+		left: 150%;
+	}
+}
+
+@media (max-width: 767px) {
+	.button {
+		margin-top: 20%;
+	}
+}
+@media (max-width: 388px) {
+	h1 {
+		font-size: 16pt;
+	}
+}
